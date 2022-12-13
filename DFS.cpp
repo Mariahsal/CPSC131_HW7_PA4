@@ -15,7 +15,7 @@ public:
         for (int i = 0; i < h; ++i)
             for (int j = 0; j < w; ++j)
                 maxlen = max(maxlen, dfsSearch(matrix, dp, INT_MIN, i, j));// Finding the maxlen by calling dfsSearch on every element of matrix
-        return maxlen;
+        return maxlen; //Return final answer
     }
     int dfsSearch(vector<vector<int>> &mat, vector<vector<int>> &dp, int prev, int i, int j) {
         int h = mat.size(), w = mat[0].size();// Getting height and width
